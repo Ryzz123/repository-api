@@ -507,7 +507,7 @@ GET /api/v1/movie/popular
       "video": false,
       "vote_average": 7.7,
       "vote_count": 4759
-    },
+    }
 ```
 
 <hr>
@@ -524,6 +524,7 @@ GET /api/v1/movie/upcoming
 <p>Response</p>
 
 ```json
+    {
 "id": 980078,
       "original_language": "en",
       "original_title": "Winnie-the-Pooh: Blood and Honey",
@@ -535,7 +536,7 @@ GET /api/v1/movie/upcoming
       "video": false,
       "vote_average": 6,
       "vote_count": 1
-    },
+    }
 ```
 
 <hr>
@@ -552,7 +553,7 @@ GET /api/v1/genre/movie/list
 <p>Response</p>
 
 ```json
-],
+    {
       "id": 1024546,
       "original_language": "en",
       "original_title": "Detective Knight: Rogue",
@@ -564,7 +565,7 @@ GET /api/v1/genre/movie/list
       "video": false,
       "vote_average": 6.8,
       "vote_count": 59
-    },
+    }
 ```
 
 <h4><a href="">Ai</a></h4>
