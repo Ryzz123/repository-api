@@ -1,6 +1,6 @@
 <h3>API REPOSITORY</h3>
 <p>Api repository adalah sebuah rest api dimana ada data dummy dan lainnya, kamu dapat menggunakannya di program kamu dan dapat membantu kamu untuk menggunakannya.</p>
-<p>Link Api <br> <a href="">https://api-repository.vercel.app</a></p>
+<p>Link Api <br> <a href="https://api-repository.vercel.app">https://api-repository.vercel.app</a></p>
 <h4><a href="">V 1.1.6</a></h4>
 
 | API | Description | Versi |
