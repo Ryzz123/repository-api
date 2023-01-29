@@ -216,7 +216,7 @@ GET /api/v1/genre/movie/list
 `
 POST /api/v1/response/text
 `
-| Parameter | Type   | Description    |
+| Body | Type   | Description    |
 |-----------|--------|---------------|
 | `request`| string | Terima response dari ai bot |
 
@@ -227,6 +227,6 @@ POST /api/v1/response/text
 `
 POST /api/v1/response/image
 `
-| Parameter | Type   | Description    |
+| Body | Type   | Description    |
 |-----------|--------|---------------|
 | `request`| string | Terima response gambar dari ai bot |
