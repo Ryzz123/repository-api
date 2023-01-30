@@ -42,6 +42,230 @@ GET /api/v1/anime
 
 <hr>
 
+<p>Get Anime By Id</p>
+
+```http
+GET /api/v1/anime/{id}
+```
+| Parameter | Type   | Description    |
+|-----------|--------|---------------|
+| `id`| string | Get anime by Id |
+
+<p>Response</p>
+
+```json
+{
+  "data": {
+    "mal_id": 24,
+    "url": "https://myanimelist.net/anime/24/School_Rumble",
+    "images": {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/4/75488.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/4/75488t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/4/75488l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/4/75488.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/4/75488t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/4/75488l.webp"
+      }
+    }
+```
+
+<hr>
+
+<p>Get Anime By Id Characters</p>
+
+```http
+GET /api/v1/anime/{id}/characters
+```
+| Parameter | Type   | Description    |
+|-----------|--------|---------------|
+| `id`| string | Get anime by Id characters |
+
+<p>Response</p>
+
+```json
+{
+  "data": [
+    {
+      "character": {
+        "mal_id": 199,
+        "url": "https://myanimelist.net/character/199/Kenji_Harima",
+        "images": {
+          "jpg": {
+            "image_url": "https://cdn.myanimelist.net/images/characters/10/29703.jpg?s=00548c794bdaea53a9ebaac70681bebf"
+          },
+          "webp": {
+            "image_url": "https://cdn.myanimelist.net/images/characters/10/29703.webp?s=00548c794bdaea53a9ebaac70681bebf",
+            "small_image_url": "https://cdn.myanimelist.net/images/characters/10/29703t.webp?s=00548c794bdaea53a9ebaac70681bebf"
+          }
+        },
+        "name": "Harima, Kenji"
+      }
+```
+
+<hr>
+
+<p>Get Anime By Id Episodes</p>
+
+```http
+GET /api/v1/anime/{id}/episodes
+```
+| Parameter | Type   | Description    |
+|-----------|--------|---------------|
+| `id`| string | Get anime by Id Episodes |
+
+<p>Response</p>
+
+```json
+{
+  "pagination": {
+    "last_visible_page": 1,
+    "has_next_page": true
+  },
+  "data": [
+    {
+      "mal_id": 1,
+      "url": "https://myanimelist.net/anime/24/School_Rumble/episode/1",
+      "title": "The New School Year! Be Still My Heart! / Love Letter Mayhem! / Warp Speed on a Bike!",
+      "title_japanese": "新学期でドキドキ! / ラブレターでジタバタ! / 自転車でドキューン!",
+      "title_romanji": "Shingakki de Dokidoki! / Love Letter de Jitabata! / Jitensha de Dokyuun! ",
+      "aired": "2004-10-05T00:00:00+00:00",
+      "score": 4.4,
+      "filler": false,
+      "recap": false,
+      "forum_url": "https://myanimelist.net/forum/?topicid=37357"
+    }
+```
+
+<hr>
+
+<p>Get Anime By Id Videos</p>
+
+```http
+GET /api/v1/anime/{id}/videos
+```
+| Parameter | Type   | Description    |
+|-----------|--------|---------------|
+| `id`| string | Get anime by Id Videos |
+
+<p>Response</p>
+
+```json
+{
+  "data": {
+    "promo": [
+      {
+        "title": "PV English dub version",
+        "trailer": {
+          "youtube_id": "0Uv3_zjM448",
+          "url": "https://www.youtube.com/watch?v=0Uv3_zjM448",
+          "embed_url": "https://www.youtube.com/embed/0Uv3_zjM448?enablejsapi=1&wmode=opaque&autoplay=1",
+          "images": {
+            "image_url": "https://img.youtube.com/vi/0Uv3_zjM448/default.jpg",
+            "small_image_url": "https://img.youtube.com/vi/0Uv3_zjM448/sddefault.jpg",
+            "medium_image_url": "https://img.youtube.com/vi/0Uv3_zjM448/mqdefault.jpg",
+            "large_image_url": "https://img.youtube.com/vi/0Uv3_zjM448/hqdefault.jpg",
+            "maximum_image_url": "https://img.youtube.com/vi/0Uv3_zjM448/maxresdefault.jpg"
+          }
+        }
+      }
+```
+
+<hr>
+
+<p>Get Anime By Id Videos episodes</p>
+
+```http
+GET /api/v1/anime/{id}/videos/episodes
+```
+| Parameter | Type   | Description    |
+|-----------|--------|---------------|
+| `id`| string | Get anime by Id Videos episodes |
+
+<p>Response</p>
+
+```json
+{
+  "pagination": {
+    "last_visible_page": 1,
+    "has_next_page": false
+  },
+  "data": [
+    {
+      "mal_id": 26,
+      "title": "School Rumble Forever!",
+      "episode": "Episode 26",
+      "url": "https://myanimelist.net/anime/24/School_Rumble/episode/26",
+      "images": {
+        "jpg": {
+          "image_url": null
+        }
+      }
+    }
+```
+
+<hr>
+
+<p>Get Anime By Id Pictures</p>
+
+```http
+GET /api/v1/anime/{id}/pictures
+```
+| Parameter | Type   | Description    |
+|-----------|--------|---------------|
+| `id`| string | Get anime by Id pictures |
+
+<p>Response</p>
+
+```json
+{
+  "data": [
+    {
+      "jpg": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/9/20417.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/9/20417t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/9/20417l.jpg"
+      },
+      "webp": {
+        "image_url": "https://cdn.myanimelist.net/images/anime/9/20417.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/9/20417t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/9/20417l.webp"
+      }
+    }
+```
+
+<hr>
+
+<p>Get Anime By Id Recommendations</p>
+
+```http
+GET /api/v1/anime/{id}/recommendations
+```
+| Parameter | Type   | Description    |
+|-----------|--------|---------------|
+| `id`| string | Get anime by Id recommendations |
+
+<p>Response</p>
+
+```json
+{
+  "data": [
+    {
+      "entry": {
+        "mal_id": 4224,
+        "url": "https://myanimelist.net/anime/4224/Toradora",
+        "images": {
+          "jpg": {
+            "image_url": "https://cdn.myanimelist.net/images/anime/13/22128.jpg?s=08c2b1b4a465fc43cbe15aae4a425b78",
+            "small_image_url": "https://cdn.myanimelist.net/images/anime/13/22128t.jpg?s=08c2b1b4a465fc43cbe15aae4a425b78",
+            "large_image_url": "https://cdn.myanimelist.net/images/anime/13/22128l.jpg?s=08c2b1b4a465fc43cbe15aae4a425b78"
+          }
+```
+
+<hr>
+
 <p>Search Anime Karakter</p>
 
 ```http
