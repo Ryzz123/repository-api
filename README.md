@@ -602,6 +602,6 @@ POST /api/v1/response/image
 
 ```json
 {
-  "result": " Horse\n\n![Horse](https:\/\/images.unsplash.com\/photo-1517957067862-8f8f1b8b7c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)"
+  "result": "https:\/\/oaidalleapiprodscus.blob.core.windows.net\/private\/org-aIzlAKPyzUxd6VfuzHt8Mzti\/user-VGw9ermKPdvywwNjce4BVSsP\/img-pa2SWXWMmyu1M7aIo2SGdzTu.png?st=2023-01-29T23%3A02%3A19Z&se=2023-01-30T01%3A02%3A19Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image\/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-01-29T18%3A26%3A17Z&ske=2023-01-30T18%3A26%3A17Z&sks=b&skv=2021-08-06&sig=53tIUmxIWjt6MoXlKLMebAyQ0AV9WdwlQCdLyOKbQZg%3D"
 }
 ```
