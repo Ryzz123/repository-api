@@ -520,11 +520,11 @@ GET /api/v1/products
 <p>Get Products By Id</p>
 
 ```http
-GET /api/v1/products/7
+GET /api/v1/products/{id}
 ```
 | Parameter | Type   | Description    |
 |-----------|--------|---------------|
-| `null`| null | Get Products dummy by id |
+| `id`| string | Get Products dummy by id |
 
 <p>Response</p>
 
